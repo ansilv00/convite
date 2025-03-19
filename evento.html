@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Evento de convite</title>
+</head>
+<body>
+
+    <div class="container">
+
+        
+        <h1>Crie seu convite</h1>
+
+        <form action="fest.php" method="post" enctype="multipart/form-data">
+
+            <label for="titulo">Titulo do convite:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="telefone">telefone para contato</label>
+            <input type="tel" id="telefone"
+            name="telefone" required>
+
+            <label for="descricao">descricao do Evento:</label>
+            <textarea name="descricao" id="descricao" required></textarea>
+
+            <label for="inicio">Data de Inicio:</label>
+            <input type="date" id="inicio" name="inicio" required>
+            
+            <label for="fim">Data de Término:</label>
+            <input type="date" id="fim" name="fim" required>
+
+            <label for="arquivo">Envie uma imagem para o convite:</label>
+            <input type="file" id="arquivo" name="arquivo" accept=".jpg,.jpeg,png">
+
+            
+
+            <button type="submit">Criar convite</button>
+        </form>
+
+    </div>
+</body>
+</html>
